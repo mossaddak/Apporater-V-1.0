@@ -6,7 +6,6 @@ from .models import(
     User
 )
 
-
 #serializer
 from .serializer import(
     UserSerializer,
@@ -24,8 +23,6 @@ from rest_framework.permissions import (
 from rest_framework_simplejwt.authentication import (
     JWTAuthentication
 )
-
-
 
 # Create your views here.
 class SingUp(APIView):
@@ -143,7 +140,6 @@ class LoginView(APIView):
                     },status = status.HTTP_400_BAD_REQUEST
                 )
         
-
 
 #profile ================================================================>
 class ProfileView(APIView):

@@ -69,8 +69,6 @@ class appkeyword_screenshot(models.Model):
     def __str__(self):
         return f"{self.pk}.{self.appkeyword_id}"
 
-
-
 class campaign(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     form_id = models.TextField(blank=True, null=True)  
